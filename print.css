@@ -1,0 +1,101 @@
+body {
+    color: #000000;
+  }
+
+  h1 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  #about h2 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align:justify;
+    
+  }
+
+  #resume h2 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align:justify;
+  }
+
+  #portfolio h2 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+
+  }
+
+  #services h2 {
+    display: none;
+  }
+
+h3 {
+    margin-left: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+  #about img {
+    float: left;
+    margin: 3px 20px 0px 20px; }
+  
+#about {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: left;
+    margin: 20px 20px 0 0;
+    margin-bottom: 70px;
+}
+
+#resume {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: left;
+    margin: 20px 20px 0 0;
+    margin-bottom: 70px;
+  
+}
+
+
+#portfolio {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin-bottom: 70px;
+    
+}
+
+#services {
+    display:none;
+
+}
+
+
+nav {
+    text-align: center;
+}
+
+nav button {
+ display: none;
+}  
+
+button:hover {
+    color: rgb(0, 0, 0);
+    background-color: grey;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
+
+#services h2 {
+    text-align: center;
+}
+
+#resume button {
+    display:none;
+}

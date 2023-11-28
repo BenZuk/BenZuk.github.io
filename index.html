@@ -1,0 +1,141 @@
+<!--Benas Žukauskas EF-22/1-->
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Pavadinimas-->
+  <title>Mano svetainė</title>
+</head>
+
+<body>
+
+    <nav>
+        <button onclick="scrollToSection('about')">Apie mane</button>
+        <button onclick="scrollToSection('resume')">Aprašymas</button>
+        <button onclick="scrollToSection('portfolio')">Atlikti darbai</button>
+        <button onclick="scrollToSection('services')">Paslaugos</button>
+        <button onclick="window.location.href='https://www.delfi.lt/'">Delfi</button>
+      </nav>
+    
+  <!-- Titulinis -->
+  <header id="header">
+    <h1>Mano puslapis</h1>
+    <img src="nuotraukos/logo.png" alt="logo" width="200" height="200">
+<p>
+    <a href="https://facebook.com">
+      <img src="nuotraukos/facebook.png" alt="facebook" width="32" height="32">
+    </a>
+
+    <a href="https://instagram.com">
+      <img src="nuotraukos/instagram.png" alt="instagram" width="32" height="32">
+    </a>
+
+    <a href="https://telegram.org">
+      <img src="nuotraukos/telegram.png" alt="telegram" width="32" height="32">
+    </a>
+  </p>
+
+  </header>
+
+  <!-- Pagrindinė dalis -->
+  <div id="main">
+
+    <!-- Apie skiltis -->
+    <section id="about">
+      <h2>Apie Mane</h2>
+      <p>
+        <img src="nuotraukos/hasbullah.jpg" alt="Mano nuotrauka" width="200" height="150">
+      </p>
+      <p><label>Vardas: Benas</label></p>
+      <p><label>Pavardė: Žukauskas</label></p>
+      <p><label>Gim. data: 2003/11/11</label></p>
+      <p><label>Miestas: Tauragė</label></p>
+      <p><label>Mokymosi įstaga: VILNIUS TECH</label></p>
+     
+    </section>
+
+    <!-- Aprašymo skiltis -->
+    <section id="resume">
+      <h2>Aprašymas</h2>
+      <h3>Darbo patirtis</h3>
+      <ul>
+            <li>Internetinės sveitainės admin</li>
+            <li>Sandėlininkas</li>
+            <li>Pagalbinis elektromonteris</li>
+        
+      </ul>
+      <button onclick="printResume()">Spausdinti aprašymą</button>
+    </section>
+
+    <!-- Atliktų darbų skiltis -->
+    <section id="portfolio">
+      <h2>Atlikti darbai</h2>
+        <p>Greitu metu bus papildyta turiniu.</p>
+    </section>
+
+<!-- Paslaugos -->
+<section id="services">
+  <h2>Paslaugos</h2>
+   <p> <video width="640" height="360" controls>
+        <source src="nuotraukos/walker.mp4" type="video/mp4">
+        Jūsų naršyklė nepalaiko vaizdo įrašo tago.
+    </video>
+    </p>
+
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fvQtiqp45fs" frameborder="0" allowfullscreen></iframe>
+    </p>
+
+    <p>
+        <audio controls>
+          <source src="nuotraukos/dambris.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </p>
+</section>
+
+<footer>
+  <p>
+    <a href="https://facebook.com">
+      <img src="nuotraukos/facebook.png" alt="facebook" width="32" height="32">
+    </a>
+
+    <a href="https://instagram.com">
+      <img src="nuotraukos/instagram.png" alt="instagram" width="32" height="32">
+    </a>
+
+    <a href="https://telegram.org">
+      <img src="nuotraukos/telegram.png" alt="telegram" width="32" height="32">
+    </a>
+  </p>
+
+  <h2>Puslapio kūrėjo informacija</h2>
+  <p>Benas Žukauskas</p>
+  <p>pastaspavyzdys@gmail.com</p>
+  <p>+3706123456</p>
+  
+</footer>
+
+
+</div>
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId.toLowerCase());
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    function printResume() {
+            window.print();
+        }
+</script>
+</body>
+
+</html>
